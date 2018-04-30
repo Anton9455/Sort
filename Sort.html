@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Методы сортировки</title>
+	<link rel="stylesheet" type="text/css" href="style.css" >
+	<script src="sort.js"></script>
+</head>
+<body>
+	<label>Методы сортировки</label>
+	<div>
+		<input type="text" name ="arrSort" placeholder ="5 9 3 1 2 8 4 7 6 : Пример" id ="arrSort" />
+		<input id="butShow" class="button" type="button" onclick="GenArray()" name="butShow" value="Отобразить"></input>
+	</div>
+	<label class="containerName">Сортировка пузырьком</label>
+	<div id="divBubbleSort" class = "containerSort" name="bubbleSort">
+		<input id="butBubbleSort" class="button" type="button" onclick="BubbleSort()" name="butBubbleSort" value="Сортировать"></input>
+		<div id ="divContainer_BubbleSort" class="container"></div>
+	</div>
+	<label class="containerName">Сортировка вставками</label>
+	<div id ="divInsertionSort" class ="containerSort" name="insertionSort">
+		<input id="butInsertionSort" class="button" type="button" onclick="InsertionSort()" name="butInsertionSort" value="Сортировать"></input>
+		<div id ="divContainer_InsertionSort" class="container"></div>
+	</div>
+	<label class="containerName">Сортировка выбором</label>
+	<div id ="divSelectionSort" class = "containerSort" name="selectionSort">
+		<input id="butSelectionSort" class="button" type="button" onclick="SelectionSort()" name="butSelectionSort" value="Сортировать"></input>
+		<div id ="divContainer_SelectionSort" class="container"></div>
+	</div>
+</body>
+</html>
